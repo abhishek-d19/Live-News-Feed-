@@ -41,3 +41,14 @@ input{
 .category-btn{
     margin:5px;
 }
+
+/* Bhagyashree */
+
+/* News container layout */
+#newsContainer{
+    display:flex;          
+    flex-wrap:wrap;        
+    justify-content:center; 
+    gap:20px;             
+}
+
