@@ -38,7 +38,12 @@ async function getNews(query = "technology") {
 
 
 
-
+loading.innerText = "";
+            } catch (error) {
+                loading.innerText = "Failed to load news.";
+                console.error(error);
+            }
+        }
 
 
 
