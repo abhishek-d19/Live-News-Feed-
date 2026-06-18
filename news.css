@@ -11,3 +11,17 @@ h1{
     margin-bottom:30px;
     color:#c62828;
 }
+
+/* Uttkarsh - Next part */
+
+.search-section{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+input{
+    padding:10px;
+    width:300px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
