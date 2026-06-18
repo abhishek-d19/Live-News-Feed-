@@ -107,3 +107,23 @@ categoryButtons.forEach(button => {
         getNews(category);
     });
 });
+
+//Alok
+// Get reference to the theme toggle button
+const themeBtn = document.getElementById("themeBtn");
+
+/*
+Toggle between dark and light themes.
+Updates the button icon to reflect the current theme.
+*/
+themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    // Show sun icon in dark mode and moon icon in light mode
+    if(document.body.classList.contains("dark")){
+        themeBtn.innerText = "☀️";
+    }
+    else{
+        themeBtn.innerText = "🌙";
+    }
+});
