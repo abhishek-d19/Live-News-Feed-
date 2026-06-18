@@ -30,3 +30,9 @@ async function getNews(query = "technology") {
 
         // Send articles to display function
         displayNews(data.articles);
+
+
+
+        // Disha
+
+        
