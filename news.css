@@ -75,3 +75,12 @@ input{
     align-items:center;
     gap:15px;
 }
+
+/* Alok */
+/* Style theme toggle button as a circular icon button */
+#themeBtn{
+    font-size:18px;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+}
