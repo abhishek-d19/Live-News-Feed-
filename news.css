@@ -52,3 +52,10 @@ input{
     gap:20px;             
 }
 
+
+/* Individual news card */
+.news-card{
+    width:300px;           
+    border:1px solid #ccc; 
+    padding:10px;         
+}
