@@ -59,3 +59,19 @@ input{
     border:1px solid #ccc; 
     padding:10px;         
 }
+
+/* Alok */
+/* News card image styling */
+.news-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+/* Header layout */
+.header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
