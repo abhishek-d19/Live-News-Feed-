@@ -33,7 +33,7 @@ async function getNews(query = "technology") {
 
 
 
-        // Disha
+        // Disha - part 15
 
 
 
@@ -92,4 +92,18 @@ searchBtn.addEventListener("click", () => {
     if(searchTerm !== ""){
         getNews(searchTerm);
     }
+});
+
+// Sahil 
+/*
+Allow users to filter news using category buttons.
+Uses custom data-category attribute from HTML.
+*/
+const categoryButtons = document.querySelectorAll(".category-btn");
+
+categoryButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const category = button.dataset.category;
+        getNews(category);
+    });
 });
