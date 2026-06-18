@@ -55,4 +55,25 @@ async function getNews(query = "technology") {
                 newsContainer.innerHTML = "<h2>No News Found</h2>";
                 return;
             }
-        
+
+
+
+            
+        // -- Uttkarsh --- Create one news card for each article---->
+            
+    articles.forEach(article => {
+        const card = document.createElement("div");
+        card.classList.add("news-card");
+
+        card.innerHTML = `
+          <img src="${article.image || 'https://via.placeholder.com/300x180'}" alt="News Image">
+             <h3>${article.title}</h3>
+                        <p>${article.description || "No description available"}</p>
+                         <a href="${article.url}" target="_blank">
+                Read More
+            </a>
+        `;
+
+        newsContainer.appendChild(card);
+    });
+}
