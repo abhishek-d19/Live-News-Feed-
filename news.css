@@ -27,7 +27,14 @@ input{
 }
 
 /* Disha - Part 7*/
+.categories {
+            text-align: center;
+            margin-bottom: 25px;
+        }
 
+        .category-btn {
+            margin: 5px;
+        }
 
 
 
