@@ -136,3 +136,8 @@ themeBtn.addEventListener("click", () => {
 //Sahil
 // Load default news when application starts
 getNews();
+        
+    </script>
+</body>
+</html>
+
