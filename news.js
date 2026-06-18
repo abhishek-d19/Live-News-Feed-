@@ -137,7 +137,5 @@ themeBtn.addEventListener("click", () => {
 // Load default news when application starts
 getNews();
         
-    </script>
-</body>
-</html>
+   
 
