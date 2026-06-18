@@ -77,3 +77,19 @@ async function getNews(query = "technology") {
         newsContainer.appendChild(card);
     });
 }
+
+
+
+
+
+
+
+    //ad
+    //Search news when user clicks Search button.
+searchBtn.addEventListener("click", () => {
+    const searchTerm = searchInput.value.trim();
+
+    if(searchTerm !== ""){
+        getNews(searchTerm);
+    }
+});
