@@ -127,3 +127,7 @@ themeBtn.addEventListener("click", () => {
         themeBtn.innerText = "🌙";
     }
 });
+
+//Sahil
+// Load default news when application starts
+getNews();
