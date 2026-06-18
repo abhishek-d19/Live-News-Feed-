@@ -35,4 +35,24 @@ async function getNews(query = "technology") {
 
         // Disha
 
+
+
+
+
+
+
+
+
+
+
+
+
+        // Bhagyashree
+        /* Create and display news cards dynamically */
+        function displayNews(articles) {
+            newsContainer.innerHTML = "";
+            if (!articles || articles.length === 0) {
+                newsContainer.innerHTML = "<h2>No News Found</h2>";
+                return;
+            }
         
