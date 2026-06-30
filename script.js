@@ -22,14 +22,22 @@ async function getNews(query = "technology") {
         loading.innerText = "Loading news...";
 
         const response = await fetch(
-            `https://gnews.io/api/v4/search?q=${query}&lang=en&apikey=${API_KEY}`
+            `https://gnews.io/api/v4/top-headlines?category=${query}&lang=en&apikey=${API_KEY}`
         );
 
         // Convert JSON response into JavaScript object
         const data = await response.json();
 
+        //new 
+        
+
         // Send articles to display function
-        displayNews(data.articles);
+      if (data.articles) {
+    displayNews(data.articles);
+} else {
+    loading.innerText = "Unable to fetch news.";
+    console.log(data);
+}
 
 
 
